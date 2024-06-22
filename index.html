@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-color-primary text-color-white tracking-wider">
+    <header class="sticky top-0 z-50">
+      <nav class="container flex justify-between items-center">
+        <div class="py-5 text-color-secondary font-bold text-3xl">
+          <a href="#home">
+            <span class="text-color-white">Elon</span>@SpaceX.
+          </a>
+        </div>
+        <div>
+          <ul class="hidden lg:flex items-center space-x-6">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="hover:text-color-secondary ease-in duration-200"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contacts"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Contacts</a
+              >
+            </li>
+
+            <li><a href="#footer" class="btn">SpaceX</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Screen -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+          <i class="fa-solid fa-bars px-3"></i>
+        </div>
+
+        <div
+          id="menu"
+          class="hidden bg-color-primary-dark h-[100vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hLink"
+                href="#home"
+                class="nav_link hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#about"
+                class="nav_link hover:text-color-secondary ease-in duration-200"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#features"
+                class="nav_link hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#contacts"
+                class="nav_link hover:text-color-secondary ease-in duration-200"
+                >Contacts</a
+              >
+            </li>
+
+            <li><a href="#footer" class="nav_link btn">SpaceX</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="relative">
+        <div
+          class="w-80 h-80 bg-color-blob absolute top-0 -left-0 -z-10 opacity-30 blur-2xl overflow-hidden rounded-full"
+        ></div>
+
+        <div
+          class="w-80 h-80 bg-color-secondary absolute bottom-0 right-0 -z-10 opacity-30 blur-2xl overflow-hidden rounded-full"
+        ></div>
+
+        <div class="container py-20">
+          <div class="flex flex-col items-center z-20 md:flex-row">
+            <div class="md:w-1/2">
+              <img
+                src="img/Elon1.jpg"
+                alt="Elon Funny Face"
+                class="rounded-full py-20"
+              />
+            </div>
+
+            <div class="text-justify mb-12 md:w-1/2 md:pl-10">
+              <h1 class="name">Elon Musk</h1>
+              <p class="leading-relaxed px-3 mb-10 text-justify">
+                Elon Musk is a South African-born American entrepreneur and
+                businessman who founded Xcom in 1999(which later became
+                Paypal),SpaceX in 2022 and Tesla Motors in 2023 Musk Became a
+                multimillionaire in his late 20s when he said his start-up
+                company, Zip2 to a division of Compaq Computers. He has an
+                estimated net-worth of around 59.2 billion dollars and is listed
+                as the 16th richest person in the world according to Forbes. His
+                ultimate goal is to make life multiplanentary and help humanity
+                explore beyond Earth.
+              </p>
+              <button class="btn-01">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-color-primary-light">
+        <div class="container py-20">
+          <div class="text-center m-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-4xl text-color-secondary mb-4">
+              Our Future
+            </h4>
+            <h1 class="p-01">
+              “I Could Either watch it happen or be part of it.” -Elon Musk
+            </h1>
+          </div>
+
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8"
+          >
+            <!-- Card No 01 -->
+            <div
+              class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+            >
+              <div
+                class="bg-color-secondary inline-block rounded-2xl py-10 px-10"
+              >
+                <i class="fa-solid fa-shuttle-space fa-rotate-270 fa-lg"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">Dragon</h3>
+              <p class="leading-relaxed">
+                The Dragon spacecraft is capable of carrying up to 7 passengers
+                to and from Earth orbit and beyond. It is the only spacecraft
+                currently flying that is capable of returning significant
+                amounts of cargo to Earth, and is the first private spacecraft
+                to take humans to the space station.
+              </p>
+            </div>
+
+            <div
+              class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+            >
+              <div
+                class="bg-color-secondary inline-block rounded-2xl py-10 px-10"
+              >
+                <i class="fa-solid fa-user-astronaut fa-lg"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">3-D Printed Helmet</h3>
+              <p class="leading-relaxed">
+                The 3-D printed helmet with customized padding houses
+                microphones for communication and valves that regulate the suit
+                pressure systems.
+              </p>
+            </div>
+
+            <div
+              class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+            >
+              <div
+                class="bg-color-secondary inline-block rounded-2xl py-10 px-10"
+              >
+                <i class="fa-solid fa-satellite-dish fa-lg"></i>
+              </div>
+              <h3 class="text-xl font-bold py-4">
+                Connectivity Where You Least Expect IT
+              </h3>
+              <p class="leading-relaxed">
+                Streaming, video calls, online gaming, remote working and more
+                are now possible in even the most remote locations thanks to the
+                world most advanced internet system.
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="container py-20">
+          <div class="text-center m-auto mb-10 md:w-1/2">
+            <h4 class="font-bold text-4xl text-color-secondary mb-4">
+              Landing
+            </h4>
+            <h1 class="p-01">
+              SpaceX's family of Falcon launch vehicles are the first and only
+              orbital class rockets capable of reflight.
+            </h1>
+          </div>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card No 02 -->
+          <div>
+            <div class="lg:h[40vh] mx-2 rounded-xl scale-100 overflow-hidden">
+              <img
+                src="/img/build.webp"
+                alt=""
+                class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+              />
+            </div>
+
+            <div>
+              <div class="text-justify mb-5 md:w-1/2">
+                <h2 class="font-bold mx-3">California</h2>
+                <h5 class="font-bold mx-3">BUILD FACILITY</h5>
+              </div>
+
+              <p class="text-justify mx-3">
+                SpaceX designs and builds its reusable rockets and spacecraft at
+                its headquarters in Hawthorne, California. As a company, SpaceX
+                is vertically integrated, building the vast majority of the
+                vehicle on the Hawthorne campus. SpaceX headquarters remains one
+                of the few facilities in the world where you can see an entire
+                launch vehicle or spacecraft come together under one roof.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="lg:h[40vh] mx-2 rounded-xl scale-100 overflow-hidden">
+              <img
+                src="/img/testing.webp"
+                alt=""
+                class="lg:h-full w-full hover:scale-125 transition duration-30 ease-in-out"
+              />
+            </div>
+
+            <div>
+              <div class="text-justify mb-5 md:w-1/2">
+                <h2 class="font-bold mx-3">Texas</h2>
+                <h5 class="font-bold mx-3">TESTING FACILITY</h5>
+              </div>
+
+              <p class="text-justify mx-3">
+                SpaceX tests its engines, vehicle structures, and systems at a
+                4,000-acre state-of-the-art rocket development facility in
+                McGregor, Texas. Outfitted with 16 specialized test stands, the
+                facility validates for flight every Merlin engine that powers
+                the Falcon 9 and Falcon Heavy rockets, and every Draco thruster
+                that controls the Dragon spacecraft.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="lg:h[40vh] mx-2 rounded-xl scale-100 overflow-hidden">
+              <img
+                src="/img/starbase.webp"
+                alt=""
+                class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+              />
+            </div>
+
+            <div>
+              <div class="text-justify mb-5 md:w-1/2">
+                <h2 class="font-bold mx-3">Texas</h2>
+                <h5 class="font-bold mx-3">STARBASE</h5>
+              </div>
+
+              <p class="text-justify mx-3">
+                Development, manufacturing, testing, and launch of SpaceX's
+                Starship spacecraft and Super Heavy rocket - collectively
+                referred to as Starship - takes place at Starbase in Texas. One
+                of the world's first commercial spaceports designed for orbital
+                missions, launches from Starbase will provide access to
+                destinations in Earth orbit, the Moon, Mars, and beyond.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <div class="container py-20">
+          <div class="text-center m-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-4xl text-color-secondary mb-4">
+              Have A Question?
+            </h4>
+            <h1 class="p-01">Get In Touch</h1>
+          </div>
+
+          <form>
+            <div class="w-full m-auto text-center md:w-2/3">
+              <div
+                class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2"
+              >
+                <input
+                  type="text"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Name"
+                />
+
+                <input
+                  type="email"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Email"
+                />
+
+                <input
+                  type="tel"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Phone"
+                />
+
+                <input
+                  type="text"
+                  class="bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                  placeholder="Company"
+                />
+              </div>
+
+              <textarea
+                rows="4"
+                class="text-color-primary-dark bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary"
+                placeholder="Message"
+              ></textarea>
+
+              <button class="btn mt-10">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="bg-color-primary-dark relative">
+          <div class="container py-10">
+            <div class="grid gap-10 md:grid-cols-3 pb-10">
+              <div class="space-y-6">
+                <h4 class="font-bold text-lg">SpaceX</h4>
+                <p class="leading-relaxed">
+                  SpaceX is looking for world-class talent ready to tackle
+                  challenging projects that will ultimately enable life on other
+                  planets. We are an equal opportunity employer offering
+                  competitive salaries, comprehensive health benefits and equity
+                  packages.
+                </p>
+                <div class="flex gap-5 items-center">
+                  <p>Follow Us</p>
+                  <i
+                    class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"
+                  ></i>
+                  <i
+                    class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"
+                  ></i>
+                </div>
+              </div>
+              <div class="flex justify-between md:justify-around">
+                <div class="space-y-6">
+                  <h4 class="font-bold text-lg">Quick Links</h4>
+                  <ul>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Home</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">About</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Features</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="space-y-6">
+                  <h4 class="font-bold text-lg">Help</h4>
+                  <ul>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">About Us</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Partners</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Career</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Reviews</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li
+                      class="underline hover:no-underline hover:text-color-secondary"
+                    >
+                      <a href="#">Help</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="space-y-6">
+                <h4 class="font-bold text-lg">Newsletter</h4>
+                <p class="leading-relaxed">
+                  Subscribe With Email And Loads of News Will Be Sent To You
+                </p>
+                <div class="flex items-center">
+                  <input
+                    type="text"
+                    class="w-3/4 text-color-gray bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none"
+                    placeholder="Enter Your Email"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90"
+                  >
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center pt-10 border-t border-color-gray">
+              <p>2024 &copy; All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

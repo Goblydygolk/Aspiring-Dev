@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-color-secondary px-9 py-3 rounded-md font-bold hover:opacity-80 ease-in duration-200;
+}
+
+.btn-01 {
+  @apply bg-color-secondary mx-3 px-9 py-3 rounded-md hover:opacity-80 ease-in duration-200;
+}
+
+.name {
+  @apply text-3xl md:text-4xl px-3 mb-3 font-bold leading-snug text-justify;
+}
+
+.p-01 {
+  @apply text-3xl md:text-4xl mb-2 leading-relaxed;
+}
